@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 24px 32px 16px;
+    border-top: 1px solid gray;
+    padding-top: 16px;
+  }
+
+  footer .copyright {
+    margin-right: auto;
+  }
+
+  footer .terms {
+    justify-content: flex-end;
+  }
+
+  footer a {
+    padding: .5rem;
+  }
