@@ -1,8 +1,7 @@
 
 .grid__container {
     display: grid;
-    width: 80vw;
-    margin: 0 auto;
+    max-width: 80vw;
     grid-auto-rows: 40%;
     grid-gap: 1rem;
     grid-auto-flow: row dense;

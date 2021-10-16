@@ -2,6 +2,7 @@
   display: grid;
   grid-auto-flow: row dense;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
 }
 
 
@@ -36,7 +37,7 @@
 
   
   .product__item {
-    width: 120px;
+    width: 100px;
   }
 
   

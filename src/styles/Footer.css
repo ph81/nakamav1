@@ -1,13 +1,16 @@
 footer {
-    max-width: 80vw;
-    padding-top: 1.5rem;
+    max-width: 90vw;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    border-top: 1px solid gray;
+    align-items: center;
   }
 
   footer .copyright {
-    margin-right: auto;
+    font-size: .7rem;
+    margin: 0 auto;
   }
 
   footer .terms {
