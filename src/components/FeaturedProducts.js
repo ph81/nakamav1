@@ -11,13 +11,15 @@ const FeaturedProducts = () => {
             <h2>New collection</h2>
                <div className="product__container">
                {featuredList.map(product => 
-                   <div className="product__item" key={product.id}>
-                       <img src={product.data.mainimage.url} alt={product.data.name} />
-                       <p>{product.data.name}</p>
-                       <p>$ {product.data.price}</p>
-                   </div>    
-                
-            
+                    <div className="product__item" key={product.id}>
+                   
+                      <div className="product__image">
+                        <img src={product.data.mainimage.url} alt={product.data.name} className="Image" />
+                      </div>
+                      <div className="product__title">{product.data.name}</div>
+                      <div className="product__price">$ {product.data.price}</div>
+                    
+                  </div>
             )}
             
         </div>

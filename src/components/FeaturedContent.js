@@ -25,8 +25,7 @@ const FeaturedContent = () => {
         slidesPerView={1}
         loop={true}
         centeredSlides
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={swiper => console.log(swiper)}
+       
         >
 
         {featuredBanners.map(banner => 

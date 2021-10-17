@@ -4,7 +4,7 @@ import '../styles/Footer.css'
 const Footer = () => {
     return (
         <footer>
-          <span className="copyright">&copy; 2021 Wizeline Academy.</span>
+          <span className="copyright">Ecommerce created during Wizeline’s Academy React Bootcamp.</span>
         </footer>
     )
 }

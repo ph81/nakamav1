@@ -1,3 +1,7 @@
+:root {
+  --swiper-theme-color: darkgrey;
+}
+
 
 .swiper {
     width: 100%;
