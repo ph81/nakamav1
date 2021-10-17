@@ -1,6 +1,6 @@
 import React from 'react';
 import dataCategories from '../mocks/en-us/product-categories.json';
-import  '../styles/ProductCategories.css'
+import  styles from '../styles/ProductCategories.module.css'
 
 const ProductCategories = () => {
 
@@ -9,9 +9,9 @@ const ProductCategories = () => {
     return (
         <section>
             <h2>Our departments</h2>
-               <div className="grid__container">
+               <div className={styles["grid__container"]}>
                {gridCategories.map(category => 
-                   <div className="grid__item" key={category.id}>
+                   <div className={styles["grid__item"]} key={category.id}>
                        <img src={category.data.main_image.url} alt={category.data.name} />
                        <p>{category.data.name}</p>
                    </div>    

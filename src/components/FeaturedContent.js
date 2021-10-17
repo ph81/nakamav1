@@ -4,7 +4,7 @@ import dataSlider from '../mocks/en-us/featured-banners.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
-import '../styles/FeaturedContent.css'
+import  styles from '../styles/FeaturedContent.module.css'
 // import Swiper core and required modules
 import SwiperCore, {
     Navigation
@@ -25,11 +25,10 @@ const FeaturedContent = () => {
         slidesPerView={1}
         loop={true}
         centeredSlides
-       
         >
 
         {featuredBanners.map(banner => 
-            <SwiperSlide key={banner.id}>
+            <SwiperSlide key={banner.id} className={styles["swiper-slide"]}>
             
             <img src={banner.data.main_image.url} alt={banner.data.title} />
            

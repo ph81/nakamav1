@@ -4,13 +4,13 @@ import FeaturedContent from './components/FeaturedContent';
 import ProductCategories from './components/ProductCategories';
 import FeaturedProducts from './components/FeaturedProducts';
 import Footer from './components/Footer';
-import './App.css';
+import styles from '../src/styles/globals.css';
 
-function App() {
+const App =()  => {
   return (
     <>
     <Header />
-    <div className="container">
+    <div className={styles.container}>
       
       <main> 
         <FeaturedContent />

@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/Footer.css'
+import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
     return (
         <footer>
-          <span className="copyright">Ecommerce created during Wizeline’s Academy React Bootcamp.</span>
+          <span className={styles.copyright}>Ecommerce created during Wizeline’s Academy React Bootcamp.</span>
         </footer>
     )
 }

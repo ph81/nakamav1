@@ -1,6 +1,6 @@
 import React from 'react'
 import dataProducts from '../mocks/en-us/featured-products.json'
-import '../styles/FeaturedProducts.css'
+import styles from '../styles/FeaturedProducts.module.css'
 
 const FeaturedProducts = () => {
 
@@ -9,15 +9,15 @@ const FeaturedProducts = () => {
     return (
         <section id="collection">
             <h2>New collection</h2>
-               <div className="product__container">
+               <div className={styles["product__container"]}>
                {featuredList.map(product => 
-                    <div className="product__item" key={product.id}>
+                    <div className={styles["product__item"]} key={product.id}>
                    
-                      <div className="product__image">
-                        <img src={product.data.mainimage.url} alt={product.data.name} className="Image" />
+                      <div className={styles["product__image"]}>
+                        <img src={product.data.mainimage.url} alt={product.data.name}  />
                       </div>
-                      <div className="product__title">{product.data.name}</div>
-                      <div className="product__price">$ {product.data.price}</div>
+                      <div className={styles["product__title"]}>{product.data.name}</div>
+                      <div className={styles["product__price"]}>$ {product.data.price}</div>
                     
                   </div>
             )}
