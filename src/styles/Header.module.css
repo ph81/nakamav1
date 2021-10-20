@@ -130,7 +130,7 @@ nav .search-icon {
 		transition: left 0.3s ease;
 	}
 
-	nav .nav-items.active {
+	nav .nav-items-active {
 		left: 0px;
 	}
 
@@ -152,7 +152,7 @@ nav .search-icon {
 		transition: top 0.3s ease, opacity 0.1s ease;
 	}
 
-	nav form.active {
+	nav form-active {
 		top: 95px;
 		opacity: 1;
 		pointer-events: auto;
@@ -194,12 +194,11 @@ nav .search-icon {
 		display: block;
 	}
 
-	nav .menu-icon span.hide,
-  nav .search-icon.hide {
+	nav .hide-icon {
 		display: none;
 	}
 
-	nav .cancel-icon.show {
+	nav .cancel-icon-show {
 		display: block;
 	}
 }

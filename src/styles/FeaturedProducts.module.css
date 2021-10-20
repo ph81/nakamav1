@@ -64,3 +64,19 @@
   width: 100%;
 	height: auto;
 }
+
+.view__products {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 25rem;
+  height: 3rem;
+  background: brown;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.view__products:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
