@@ -1,0 +1,30 @@
+
+.filter__container {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    max-width: 15vw;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.filter__category {
+    padding: 20px 0;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+@media all and (max-width: 768px) {
+    .filter__container {
+        flex-direction: row;
+        width: 80vw;
+        max-width: 80vw;
+    }
+
+    .filter__container {
+        font-size: 0.3em;
+    }
+  
+  
+  }

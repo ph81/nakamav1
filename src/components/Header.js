@@ -2,18 +2,25 @@ import React, { useState } from 'react';
 import styles from '../styles/Header.module.css';
 import { FaBars, FaTimes, FaSearch, FaShoppingCart, FaUserAlt } from 'react-icons/fa';
 
+
 const Header = () => {
 
     // Setting up menu logic
     const [isMenuActive, setMenuActive] = useState(false);
     console.log(isMenuActive);
 
+    //const menuItems = useRef(null);
+
     const ToggleMenu = () => {
-      setMenuActive(true); 
+      setMenuActive(true);     
+        
      };
+/*
+    useEffect(() => {
+        
+    }, [menuItems]);
 
-
-
+*/
 
     return (
         <>
@@ -24,7 +31,7 @@ const Header = () => {
             <div className={styles.logo}>
                 NAKAMA
             </div>
-            <div className={styles["nav-items"]}>
+            <div id="menu-items" className={styles["nav-items"]}>
           
                     <li><a href="/">Home</a></li>
                     <li><a href="/#about">About</a></li>

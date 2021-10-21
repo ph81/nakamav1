@@ -11,7 +11,11 @@ const AllProducts =()  => {
     <div className={styles.container}>
       
       <main> 
-        <ProductList />
+       
+         
+          <ProductList />
+        
+       
       </main>
       <Footer />
       
