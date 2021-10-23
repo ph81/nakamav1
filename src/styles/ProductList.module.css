@@ -70,8 +70,8 @@
 .filter__container {
   display: flex;
   flex-direction: column;
-  width: 15vw;
-  max-width: 15vw;
+  width: 18vw;
+  max-width: 18vw;
   margin-top: 3rem;
   text-align: left;
 }
@@ -83,16 +83,24 @@
   font-size: 0.9em;
 }
 
+
+.filter__item {
+  text-align: left;
+  font-size: 0.9em;
+}
+
+
+
 @media all and (max-width: 768px) {
   .filter__container {
       flex-direction: row;
       width: 80vw;
       max-width: 80vw;
-  }
-
-  .filter__container {
       font-size: 0.9em;
   }
+
+  
+
 
 
 }

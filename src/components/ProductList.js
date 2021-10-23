@@ -41,6 +41,7 @@ const ProductList = () => {
     return (
       <section id="filterbycategory">
         <div className={styles["filter__container"]}>
+        <h3>Products by category</h3>
         {categories.map(category => 
             <div className={styles["filter__item"]} key={category.id}>
                <label>
